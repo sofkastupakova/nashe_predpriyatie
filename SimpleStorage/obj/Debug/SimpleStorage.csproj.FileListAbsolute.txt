@@ -1,0 +1,13 @@
+C:\sources\consultations\@sofka_stupakova\SimpleStorage\SimpleStorage\bin\Debug\SimpleStorage.exe.config
+C:\sources\consultations\@sofka_stupakova\SimpleStorage\SimpleStorage\bin\Debug\SimpleStorage.exe
+C:\sources\consultations\@sofka_stupakova\SimpleStorage\SimpleStorage\bin\Debug\SimpleStorage.pdb
+C:\sources\consultations\@sofka_stupakova\SimpleStorage\SimpleStorage\obj\Debug\SimpleStorage.csproj.AssemblyReference.cache
+C:\sources\consultations\@sofka_stupakova\SimpleStorage\SimpleStorage\obj\Debug\SimpleStorage.csproj.SuggestedBindingRedirects.cache
+C:\sources\consultations\@sofka_stupakova\SimpleStorage\SimpleStorage\obj\Debug\SimpleStorage.Properties.Resources.resources
+C:\sources\consultations\@sofka_stupakova\SimpleStorage\SimpleStorage\obj\Debug\SimpleStorage.csproj.GenerateResource.cache
+C:\sources\consultations\@sofka_stupakova\SimpleStorage\SimpleStorage\obj\Debug\SimpleStorage.csproj.CoreCompileInputs.cache
+C:\sources\consultations\@sofka_stupakova\SimpleStorage\SimpleStorage\obj\Debug\SimpleStorage.exe
+C:\sources\consultations\@sofka_stupakova\SimpleStorage\SimpleStorage\obj\Debug\SimpleStorage.pdb
+C:\sources\consultations\@sofka_stupakova\SimpleStorage\SimpleStorage\obj\Debug\SimpleStorage.ProductControl.resources
+C:\sources\consultations\@sofka_stupakova\SimpleStorage\SimpleStorage\obj\Debug\SimpleStorage.SearchControl.resources
+C:\sources\consultations\@sofka_stupakova\SimpleStorage\SimpleStorage\obj\Debug\SimpleStorage.Main.resources
