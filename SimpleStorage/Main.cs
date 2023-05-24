@@ -27,8 +27,8 @@ namespace SimpleStorage
             _lastSearchParams = e;
             if (_storage == null)
             {
-                MessageBox.Show("Для начала, создайте или откройте файл базы данных склада.",
-                        "Мой склад", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Для начала, создайте или откройте файл базы данных поступающих.",
+                        "Список поступающих в детский дом творчества ''Союз''", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -74,7 +74,7 @@ namespace SimpleStorage
             if (saveFileDialog.ShowDialog() == DialogResult.OK)
             {
                 _storage = new FileStorage(saveFileDialog.FileName);
-                Text = $"Мой склад [{_storage.FileName}]";
+                Text = $"Список поступающих в детский дом творчества ''Союз'' [{_storage.FileName}]";
             }
         }
 
@@ -87,12 +87,12 @@ namespace SimpleStorage
                 {
                     _storage = new FileStorage(openFileDialog.FileName);
                     _storage.Load();
-                    Text = $"Мой склад [{_storage.FileName}]";
+                    Text = $"Список поступающих в детский дом творчества ''Союз'' [{_storage.FileName}]";
                 }
                 catch
                 {
-                    MessageBox.Show("Не удалось открыть файл базы данных склада. Возможно, файл поврежден.",
-                        "Мой склад", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Не удалось открыть файл базы данных поступающих. Возможно, файл поврежден.",
+                        "Список поступающих в детский дом творчества ''Союз''", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
@@ -100,28 +100,28 @@ namespace SimpleStorage
         private void toolStripMenuItemClose_Click(object sender, EventArgs e)
         {
             _storage = null;
-            Text = "Мой склад";
+            Text = "Список поступающих в детский дом творчества ''Союз'' ";
         }
 
         private void buttonAdd_Click(object sender, EventArgs e)
         {
             if (_storage == null)
             {
-                MessageBox.Show("Для начала, создайте или откройте файл базы данных склада.",
-                        "Мой склад", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Для начала, создайте или откройте файл базы данных поступающих.",
+                        "Список поступающих в детский дом творчества ''Союз''", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
             try
             {
                 _storage.Add(productControl.GetProduct());
-                MessageBox.Show("Товар успешно добавлен на склад!", "Мой склад");
+                MessageBox.Show("Объект успешно добавлен в список!", "Список поступающих в детский дом творчества ''Союз''");
                 productControl.Clear();
             }
             catch (Exception exception)
             {
-                MessageBox.Show($"Невозможно добавить новый товар.\n{exception.Message}",
-                        "Мой склад", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show($"Невозможно добавить новый объект.\n{exception.Message}",
+                        "Список поступающих в детский дом творчества ''Союз''", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
 
@@ -132,14 +132,14 @@ namespace SimpleStorage
         {
             if (_storage == null)
             {
-                MessageBox.Show("Для начала, создайте или откройте файл базы данных склада.",
-                        "Мой склад", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Для начала, создайте или откройте файл базы данных поступающих.",
+                        "Список поступающих в детский дом творчества ''Союз''", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
             if (listViewProducts.SelectedItems != null && listViewProducts.SelectedItems.Count > 0)
             {
-                if (MessageBox.Show("Вы действительно желаете удалить товар?", "Мой склад",
+                if (MessageBox.Show("Вы действительно желаете удалить объект?", "Список поступающих в детский дом творчества ''Союз''",
                 MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
                 {
                     _storage.Remove((Product)listViewProducts.SelectedItems[0].Tag);
@@ -147,7 +147,7 @@ namespace SimpleStorage
                 }
             }
             else
-                MessageBox.Show("Выберите товар.", "Мой склад", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Выберите объект.", "Список поступающих в детский дом творчества ''Союз''", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

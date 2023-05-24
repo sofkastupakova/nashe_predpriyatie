@@ -41,53 +41,55 @@ namespace SimpleStorage
             // 
             // textBoxPriceTo
             // 
-            this.textBoxPriceTo.Location = new System.Drawing.Point(438, 7);
-            this.textBoxPriceTo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxPriceTo.Location = new System.Drawing.Point(584, 9);
+            this.textBoxPriceTo.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.textBoxPriceTo.Name = "textBoxPriceTo";
-            this.textBoxPriceTo.Size = new System.Drawing.Size(95, 20);
+            this.textBoxPriceTo.Size = new System.Drawing.Size(125, 22);
             this.textBoxPriceTo.TabIndex = 14;
             // 
             // textBoxPriceFrom
             // 
-            this.textBoxPriceFrom.Location = new System.Drawing.Point(314, 7);
-            this.textBoxPriceFrom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxPriceFrom.Location = new System.Drawing.Point(419, 9);
+            this.textBoxPriceFrom.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.textBoxPriceFrom.Name = "textBoxPriceFrom";
-            this.textBoxPriceFrom.Size = new System.Drawing.Size(95, 20);
+            this.textBoxPriceFrom.Size = new System.Drawing.Size(125, 22);
             this.textBoxPriceFrom.TabIndex = 13;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(412, 9);
+            this.label3.Location = new System.Drawing.Point(549, 11);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(22, 13);
+            this.label3.Size = new System.Drawing.Size(26, 16);
             this.label3.TabIndex = 12;
             this.label3.Text = "до:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 9);
+            this.label2.Location = new System.Drawing.Point(16, 11);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(124, 13);
+            this.label2.Size = new System.Drawing.Size(96, 16);
             this.label2.TabIndex = 11;
-            this.label2.Text = "Наименование товара:";
+            this.label2.Text = "ФИО ребенка";
             // 
             // textBoxName
             // 
-            this.textBoxName.Location = new System.Drawing.Point(145, 7);
-            this.textBoxName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxName.Location = new System.Drawing.Point(120, 11);
+            this.textBoxName.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.textBoxName.Name = "textBoxName";
-            this.textBoxName.Size = new System.Drawing.Size(95, 20);
+            this.textBoxName.Size = new System.Drawing.Size(196, 22);
             this.textBoxName.TabIndex = 10;
             // 
             // checkBoxProce
             // 
             this.checkBoxProce.AutoSize = true;
-            this.checkBoxProce.Location = new System.Drawing.Point(243, 9);
-            this.checkBoxProce.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.checkBoxProce.Location = new System.Drawing.Point(324, 11);
+            this.checkBoxProce.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.checkBoxProce.Name = "checkBoxProce";
-            this.checkBoxProce.Size = new System.Drawing.Size(69, 17);
+            this.checkBoxProce.Size = new System.Drawing.Size(83, 20);
             this.checkBoxProce.TabIndex = 9;
             this.checkBoxProce.Text = "Цена от:";
             this.checkBoxProce.UseVisualStyleBackColor = true;
@@ -96,10 +98,10 @@ namespace SimpleStorage
             // 
             this.buttonSearch.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonSearch.Location = new System.Drawing.Point(537, 7);
-            this.buttonSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonSearch.Location = new System.Drawing.Point(716, 9);
+            this.buttonSearch.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.buttonSearch.Name = "buttonSearch";
-            this.buttonSearch.Size = new System.Drawing.Size(89, 20);
+            this.buttonSearch.Size = new System.Drawing.Size(119, 25);
             this.buttonSearch.TabIndex = 8;
             this.buttonSearch.Text = "Поиск";
             this.buttonSearch.UseVisualStyleBackColor = true;
@@ -107,7 +109,7 @@ namespace SimpleStorage
             // 
             // SearchControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.textBoxPriceTo);
             this.Controls.Add(this.textBoxPriceFrom);
@@ -116,8 +118,9 @@ namespace SimpleStorage
             this.Controls.Add(this.textBoxName);
             this.Controls.Add(this.checkBoxProce);
             this.Controls.Add(this.buttonSearch);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "SearchControl";
-            this.Size = new System.Drawing.Size(639, 36);
+            this.Size = new System.Drawing.Size(852, 44);
             this.ResumeLayout(false);
             this.PerformLayout();
 
